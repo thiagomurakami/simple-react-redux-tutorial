@@ -31,6 +31,6 @@ How would our previous example be written using Redux?
 
 
 ## Further Reading
-* (A study plan to cure Javascript Fatigue)[1]
+* [A study plan to cure Javascript Fatigue](1)
 
 [1]: https://medium.com/@sachagreif/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1#.djem8j34q
