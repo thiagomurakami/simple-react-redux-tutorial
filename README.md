@@ -1,8 +1,8 @@
 # Simple React Redux Tutorial!
 
 There are a lot of awesome of React (+Redux) tutorials out there such as:
-* (Full Stack Redux Tutorial)[http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html]
-* (React Hello World! documentation)[https://facebook.github.io/react/docs/hello-world.html]
+* [Full Stack Redux Tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
+* [React Hello World! documentation](https://facebook.github.io/react/docs/hello-world.html)
 
 This is my humble attempt to make a more pragmatic one!
 
