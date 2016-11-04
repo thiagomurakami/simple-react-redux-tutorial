@@ -17,10 +17,6 @@ This is my humble attempt to make a more pragmatic one!
 
 Understand the basic concept of React, what is the difference server-side or client-side apps and the basics of how React renders your app into the page!
 
-## Understanding React
-
-Understand components and its lifecycle API.
-
 ## To-do list
 
 The classic example! Let's add some interactions to the page and fetch a list from the server!

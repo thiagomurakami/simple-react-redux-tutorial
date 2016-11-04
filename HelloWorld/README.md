@@ -1,5 +1,12 @@
 # Hello World!
 
+## Table of Contents
+
+- [Introduction](#intro)
+- [Running](#running)
+- [Explanation](#explanation)
+- [A step further](#step-further)
+
 ## Introduction
 
 The "usual" web app (server side) works like this:
