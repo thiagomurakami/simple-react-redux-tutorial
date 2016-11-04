@@ -24,7 +24,7 @@ You will also see any lint errors in the console.
 ## Project Structure
 
 ```
-my-app/
+TodosReactOnly/
   README.md
   node_modules/
   package.json

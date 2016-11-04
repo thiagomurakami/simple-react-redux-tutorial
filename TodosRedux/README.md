@@ -16,21 +16,56 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+TodosRedux/
+  README.md
+  node_modules/
+  package.json
+  public/
+    index.html
+  src/
+    actions/
+    	index.js: Description of actions
+    	index.spec.js: Tests
+	components/
+		App.js: Simply gets all containers and mounts them.
+		Footer.js: Renders the footer and the filter options.
+		Link.js: Each filter option.
+		Todo.js: Each todo.
+		TodoList.js: Renders todo list.
+	containers/
+		AddTodo.js:  Renders the form to add a todo.
+		FilterLink.js: Connects the Link component to the data/actions it needs.
+		VisibleTodoList.js: Same as FilterLink but with TodoList
+	reducers/
+		index.js: The entrypoint to the reducers, combines the different reducers into one.
+		todos.js: Reducer for todos interactions
+		todos.spec.js
+		visibilityFilter.js: Reducer for filters
+    index.css
+    index.js: Creates a data source (store) from reducers and gives it to the App with Provider
+  app.js: Simple express API server
+  todos.json: Mock todos that follow the same protocol as the app
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Redux? Actions? Stores? Reducers?
 
-### `npm run eject`
+If you are really interested, read the [Redux documentation](http://redux.js.org/), it's really good and probably does a better job at explaining Redux than this simple README.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Redux
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+All the STATE is inside a single store, and dispatching an action is the only way to modify it. The modification is done using reducers! Yeah, that's basically it!
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Glossary
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Read Redux's [Glossary](http://redux.js.org/docs/Glossary.html) to understand each term.
 
+### Using Redux with React
+
+Surprisingly, Redux is a library that could be used without React, to make it work with it, you need to [`connect`](https://github.com/reactjs/react-redux/blob/master/docs/api.md#connectmapstatetoprops-mapdispatchtoprops-mergeprops-options) your components to the Redux Store.
+
+## A step further
+
+Try adding a new functionality. If you're feeling adventurous, try fetching the initial state from the server! [Async Actions from Redux docs](http://redux.js.org/docs/advanced/AsyncActions.html)
