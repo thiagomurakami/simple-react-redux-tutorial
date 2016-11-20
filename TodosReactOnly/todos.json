@@ -1,0 +1,13 @@
+{
+	"todos": [
+		{
+			"id": 0,
+			"completed": false,
+			"text": "Read README"
+		}, 
+		{
+			"id": 1,
+			"completed": false,
+			"text": "Learn Redux"
+		}]
+}
