@@ -9,9 +9,8 @@ This is my humble attempt to make a more pragmatic one!
 ## Table of Contents
 
 1. [Hello World!](#hello-world)
-2. [Understanding React](#understanding-react)
-3. [To-do list](#todo-list)
-4. [To-do list Redux style](#todo-list-redux)
+2. [To-do list](#todo-list)
+3. [To-do list Redux style](#todo-list-redux)
 
 ## Hello World!
 
